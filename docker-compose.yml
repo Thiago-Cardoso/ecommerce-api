@@ -24,6 +24,8 @@ services:
       - app-gems:/app-gems
     # env_file:
     #   - ".env"
+    tmpfs:
+      - "/tmp"
   mailcatcher:
     image: yappabe/mailcatcher
     ports:
